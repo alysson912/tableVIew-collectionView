@@ -13,6 +13,10 @@
 		389A7FF829A4181900D1277C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389A7FF629A4181900D1277C /* Main.storyboard */; };
 		389A7FFA29A4181A00D1277C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389A7FF929A4181A00D1277C /* Assets.xcassets */; };
 		389A7FFD29A4181A00D1277C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389A7FFB29A4181A00D1277C /* LaunchScreen.storyboard */; };
+		389A800A29A41AFC00D1277C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A800829A41AFC00D1277C /* CustomTableViewCell.swift */; };
+		389A800B29A41AFC00D1277C /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389A800929A41AFC00D1277C /* CustomTableViewCell.xib */; };
+		389A801029A4215000D1277C /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A800E29A4215000D1277C /* CustomCollectionViewCell.swift */; };
+		389A801129A4215000D1277C /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389A800F29A4215000D1277C /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		389A7FF929A4181A00D1277C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		389A7FFC29A4181A00D1277C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		389A7FFE29A4181A00D1277C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389A800829A41AFC00D1277C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		389A800929A41AFC00D1277C /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		389A800E29A4215000D1277C /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		389A800F29A4215000D1277C /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				389A7FF029A4181900D1277C /* AppDelegate.swift */,
 				389A7FF229A4181900D1277C /* SceneDelegate.swift */,
-				389A7FF429A4181900D1277C /* ViewController.swift */,
-				389A7FF629A4181900D1277C /* Main.storyboard */,
+				389A800429A4185C00D1277C /* src */,
 				389A7FF929A4181A00D1277C /* Assets.xcassets */,
 				389A7FFB29A4181A00D1277C /* LaunchScreen.storyboard */,
 				389A7FFE29A4181A00D1277C /* Info.plist */,
 			);
 			path = "tableVIew-CollectionView";
+			sourceTree = "<group>";
+		};
+		389A800429A4185C00D1277C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				389A800C29A4213000D1277C /* CustomCollectionViewCell */,
+				389A800629A41AE300D1277C /* CustomTableVIewCell */,
+				389A800529A4187100D1277C /* Home */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		389A800529A4187100D1277C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				389A7FF429A4181900D1277C /* ViewController.swift */,
+				389A7FF629A4181900D1277C /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		389A800629A41AE300D1277C /* CustomTableVIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				389A800829A41AFC00D1277C /* CustomTableViewCell.swift */,
+				389A800929A41AFC00D1277C /* CustomTableViewCell.xib */,
+			);
+			path = CustomTableVIewCell;
+			sourceTree = "<group>";
+		};
+		389A800C29A4213000D1277C /* CustomCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				389A800E29A4215000D1277C /* CustomCollectionViewCell.swift */,
+				389A800F29A4215000D1277C /* CustomCollectionViewCell.xib */,
+			);
+			path = CustomCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +171,8 @@
 			files = (
 				389A7FFD29A4181A00D1277C /* LaunchScreen.storyboard in Resources */,
 				389A7FFA29A4181A00D1277C /* Assets.xcassets in Resources */,
+				389A800B29A41AFC00D1277C /* CustomTableViewCell.xib in Resources */,
+				389A801129A4215000D1277C /* CustomCollectionViewCell.xib in Resources */,
 				389A7FF829A4181900D1277C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				389A7FF529A4181900D1277C /* ViewController.swift in Sources */,
+				389A801029A4215000D1277C /* CustomCollectionViewCell.swift in Sources */,
 				389A7FF129A4181900D1277C /* AppDelegate.swift in Sources */,
+				389A800A29A41AFC00D1277C /* CustomTableViewCell.swift in Sources */,
 				389A7FF329A4181900D1277C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.tableVIew-CollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +381,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a1.tableVIew-CollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
